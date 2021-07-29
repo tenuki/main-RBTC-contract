@@ -44,6 +44,7 @@
     "zos-lib": "2.3.1"
   },
   "devDependencies": {
+    "@zemse/solidity-flattener": "1.5.1",
     "abi-decoder": "1.2.0",
     "babel-eslint": "10.0.2",
     "bignumber.js": "9.0.0",
@@ -59,7 +60,7 @@
     "eslint-plugin-promise": "4.2.1",
     "ethlint": "1.2.4",
     "flat": "4.1.0",
-    "ganache-cli": "6.4.5",
+    "ganache-cli": "^6.9.1",
     "mocha": "6.2.0",
     "openzeppelin-test-helpers": "0.4.0",
     "prettier": "1.18.2",
@@ -67,8 +68,7 @@
     "standard-version": "7.1.0",
     "truffle": "5.0.26",
     "truffle-hdwallet-provider": "1.0.13",
-    "web3": "1.0.0-beta.55",
-    "@zemse/solidity-flattener": "1.5.1"
+    "web3": "1.0.0-beta.55"
   },
   "engines": {
     "node": "=8.17.0"
