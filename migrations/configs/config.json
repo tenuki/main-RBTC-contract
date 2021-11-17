@@ -168,6 +168,7 @@
     "protected": 1.5,
     "vendorGuardianAddress": "",
     "mocTokenCommissionsAddress": "",
+    "governorOwnerAddress": "0xF9f405832140cC723709C94266b3FA02BF9C3F43",
     "mocTokenAddress": "0x1C382A7C0481ff75C69EC1757Eff297C9255494B",
     "commissionRates": {
       "MINT_BPRO_FEES_RBTC": 0.001,

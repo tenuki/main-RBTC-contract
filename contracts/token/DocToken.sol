@@ -5,8 +5,8 @@ import "./OwnerBurnableToken.sol";
 
 contract DocToken is ERC20Detailed, OwnerBurnableToken {
 
-  string private _name = "BNB Dollar on Chain";
-  string private _symbol = "bDOC";
+  string private _name = "BNB Dollar on Chain2";
+  string private _symbol = "bDOC2";
   uint8 private _decimals = 18;
 
   /**

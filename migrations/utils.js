@@ -344,7 +344,7 @@ const makeUtils = async (artifacts, networkName, config, owner, deployer) => {
       mocExchange: getImplementationAddress(proxies, 'MoCExchange'),
       mocSettlement: getImplementationAddress(proxies, 'MoCSettlement'),
       mocConnector: getImplementationAddress(proxies, 'MoCConnector'),
-      mocToken: mocTokenAddress(),
+      mocToken: await mocTokenAddress(),
       mocHelperLib: (await MoCLib.deployed()).address
     };
   };
@@ -399,7 +399,7 @@ const makeUtils = async (artifacts, networkName, config, owner, deployer) => {
       emaBlockSpan: config.dayBlockSpan,
       maxMintBPro: toContract(config.maxMintBPro * 10 ** 18),
       mocPriceProvider: mocOracleAddress,
-      mocTokenAddress: mocTokenAddress(),
+      mocTokenAddress: await mocTokenAddress(),
       mocVendorsAddress: mocVendors.address,
       liquidationEnabled: config.liquidationEnabled,
       protected: toContract(config.protected * 10 ** 18)
@@ -471,7 +471,7 @@ const makeUtils = async (artifacts, networkName, config, owner, deployer) => {
       targetAddressCommission,
       toContract(config.mocProportion),
       governorAddress,
-      mocTokenAddress(),
+      await mocTokenAddress(),
       mocTokenCommissionsAddress
     );
     console.log('CommissionSplitter Initialized');
@@ -565,7 +565,7 @@ const makeUtils = async (artifacts, networkName, config, owner, deployer) => {
       ProxyAdmin: implementationAddr.proxyAdmin,
       UpgradeDelegator: implementationAddr.upgradeDelegator,
       Governor: implementationAddr.governor,
-      MoCToken: mocTokenAddress(), // why is this different from getImplementationAddresses() ??
+      MoCToken: await mocTokenAddress(), // why is this different from getImplementationAddresses() ??
       MoCPriceProvider: implementationAddr.mocOracle,
       MoCVendors: implementationAddr.mocVendors,
       MoCHelperLib: implementationAddr.mocHelperLib,

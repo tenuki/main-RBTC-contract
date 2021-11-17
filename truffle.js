@@ -100,8 +100,8 @@ module.exports = {
       confirmations: 1
     },
     bscTestnet: {
-	    host: 'http://localhost:8575',
-      provider: new HDWalletProvider(mnemonic, 'http://localhost:8575'),
+//	    host: 'http://localhost:8575',
+      provider: new HDWalletProvider(mnemonic, 'https://data-seed-prebsc-1-s1.binance.org:8545/'),
       network_id: '97',
       gas: 6700000,
       gasPrice: 18000000000,
