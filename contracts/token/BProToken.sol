@@ -6,8 +6,8 @@ import "./OwnerBurnableToken.sol";
 
 contract BProToken is ERC20Detailed, ERC20Pausable, OwnerBurnableToken {
 
-  string private _name = "BitPRO";
-  string private _symbol = "BITP";
+  string private _name = "BinPRO";
+  string private _symbol = "BINP";
   uint8 private _decimals = 18;
 
   /**
